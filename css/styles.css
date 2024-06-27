@@ -1,4 +1,4 @@
-/* Normalization */
+/* Global */
 
 * {
     box-sizing: border-box;
@@ -9,12 +9,40 @@
     line-height: inherit;
 }
 
+body {
+    padding: 10px 20px;
+}
+
 :root {
-    
+    font-family: "Roboto", sans-serif;
+    --dk-background: #1f2937;
+    --cta-background: #3882f6;
+    --qt-background: #e5e7eb;
 }
 
 
 /* header */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header {
+    margin: 0;
+}
+
+.links {
+    display: flex;
+    gap: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: blue;
+}
+
 
 div.intro h1 {
 
@@ -25,32 +53,36 @@ div.intro p {
 }
 
 div.intro img {
-    width: 600px;
-    height: 400px;
+    width: 425px;
+    height: 200px;
+    object-fit: cover;
 }
 
-/* body */
-
-/* old 
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+/* OLD
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-div.gallery img {
-    width: 600px;
-    height: 400px;
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-div.desc {
-    padding: 15px;
-    text-align: center;
+.img-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 425px;
+    height: 200px;
+    object-fit: cover;
 }
 */
 
-/* new */
+/* body */
+
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
